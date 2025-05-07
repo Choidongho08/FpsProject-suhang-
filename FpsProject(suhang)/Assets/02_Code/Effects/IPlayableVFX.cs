@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _02_Code.Effects
+namespace Blade.Effects
 {
     public interface IPlayableVFX
     {

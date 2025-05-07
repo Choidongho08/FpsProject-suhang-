@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _02_Code.Players.States
 {
-    public class PlayerIdleState : PlayercanAttackState
+    public class PlayerIdleState : PlayerState
     {
         private CharacterMovement _movement;
         

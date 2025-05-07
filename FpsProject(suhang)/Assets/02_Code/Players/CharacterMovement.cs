@@ -41,7 +41,7 @@ namespace _02_Code.Players
         {
             if (CanManualMovement)
             {
-                _velocity = Quaternion.Euler(0, -45f, 0) * _movementDirection;
+                _velocity = _movementDirection;
                 _velocity *= moveSpeed * Time.fixedDeltaTime;
             }
             else

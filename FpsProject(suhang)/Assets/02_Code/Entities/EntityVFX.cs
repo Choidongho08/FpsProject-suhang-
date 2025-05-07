@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using _02_Code.Effects;
+using Blade.Effects;
 using UnityEngine;
 
 namespace _02_Code.Entities

@@ -3,11 +3,10 @@ using UnityEngine;
 
 namespace _02_Code.Players.States
 {
-    public class PlayerMoveState : PlayercanAttackState
+    public class PlayerMoveState : PlayerState
     {
         private CharacterMovement _movement;
         private EntityVFX _vfxCompo;
-        private readonly string _footStepEffectName = "FootStep";
         
         public PlayerMoveState(Entity entity, int animationHash) : base(entity, animationHash)
         {
@@ -18,13 +17,13 @@ namespace _02_Code.Players.States
         public override void Enter()
         {
             base.Enter();
-            _vfxCompo.PlayVfx(_footStepEffectName, Vector3.zero, Quaternion.identity);
+            // _vfxCompo.PlayVfx(_footStepEffectName, Vector3.zero, Quaternion.identity);
         }
 
         public override void Exit()
         {
             base.Exit();
-            _vfxCompo.StopVfx(_footStepEffectName);
+            // _vfxCompo.StopVfx(_footStepEffectName);
         }
 
         public override void Update()

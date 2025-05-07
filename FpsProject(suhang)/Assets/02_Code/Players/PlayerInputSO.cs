@@ -7,8 +7,6 @@ namespace _02_Code.Players
     [CreateAssetMenu(fileName = "PlayerInput", menuName = "SO/PlayerInput", order = 0)]
     public class PlayerInputSO : ScriptableObject, Controls.IPlayerActions
     {
-        [SerializeField] private LayerMask whatIsGround;
-        
         public event Action OnAttackPressed;
 
         public Vector2 MovementKey { get; private set; }
